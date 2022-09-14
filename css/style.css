@@ -1,3 +1,4 @@
+
 #foto {
   width: 400px !important;
   height: 400px !important;
@@ -9,4 +10,52 @@
 #foto2 {
   width: 400px !important;
   height: 400px !important;
+* {
+  max-width: 1000px;
+}
+
+body {
+  background: #1d1b26;
+}
+
+.sliding-button {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  position: fixed;
+  padding: 15px 30px;
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  border-image-slice: 1;
+  margin: 10px 20px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 2px;
+  transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+  bottom: 200px;
+  /* right: 0px; */
+  left: 0px;
+  text-align: center;
+}
+.sliding-button:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  z-index: -1;
+  color: white;
+  background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.sliding-button:hover {
+  background: rgba(255, 255, 255, 0);
+}
+.sliding-button:hover:before {
+  bottom: 0%;
+  top: auto;
+  height: 100%;
+
 }
