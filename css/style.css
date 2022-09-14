@@ -1,3 +1,15 @@
+
+#foto {
+  width: 400px !important;
+  height: 400px !important;
+}
+#foto1 {
+  width: 400px !important;
+  height: 400px !important;
+}
+#foto2 {
+  width: 400px !important;
+  height: 400px !important;
 * {
   max-width: 1000px;
 }
@@ -45,4 +57,5 @@ body {
   bottom: 0%;
   top: auto;
   height: 100%;
+
 }
